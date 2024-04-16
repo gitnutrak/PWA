@@ -1,0 +1,17 @@
+{
+    "theme_color": "#e6d838",
+    "background_color": "#e6d838",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/PWA/",
+    "name": "Blog o Fenku",
+    "short_name": "fenekAPP",
+    "description": "ProjektWSB",
+    "icons": [
+        {
+            "src": "./icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
