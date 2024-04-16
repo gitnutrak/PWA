@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -13,44 +13,79 @@
 
 <body>
     <header>
-        <h1> Blog o fenku pustynnym</h1>
-        <img src="licensed-image.jpg" alt="Opis zdjęcia" style="height: 375px; width: 350px;">
+        <h1>Blog o fenku pustynnym</h1>
+        <img src="licensed-image.jpg" alt="Opis zdjęcia" style="height: 375px; width: 375px;">
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="header">
-                <h1>Kim on jest?</h1>
-                <p>Fenek pustynny, fenek (Vulpes zerda), lis pustynny - gatunek drapieżnego ssaka z rodziny psowatych
-                    (Canidae).</p>
+    <main>
+        <p>Przy okazji sprawdź swoją pogodę!</p>
+        <section class="search">
+            <input type="text" id="input" placeholder="Podaj nazwę miasta">
+            <button id="przycisk">Sprawdź pogodę</button>
+            <p class="error"></p>
+        </section>
+        <section class="app">
+            <h2 class="city"></h2>
+            <img src="weatherimg.jpg" id="weatherImg" alt="Pogoda" style="height: 150px; width: 150px;">
+            <div class="weather">
+                <div class="weather_img">
+                    <p class="temp"></p>
+                </div>
+                <p class="weatherDescription"></p>
             </div>
-            <div class="content">
-                <div class="card">
-                    <img src="fen1.jpg" style="height: 375px; width: 350px;">
-                    <h4>Wygląd</h4>
-                    <p>Osiąga 30-40 cm długości, samce ważą ok. 1,5 kg, samice ok. 0,8 kg. Ma charakterystyczne, duże
-                        uszy, dorastające do 15 cm, dzięki którym ma dobry słuch i może efektywnie chłodzić ciało.</p>
+            <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+            <p>Ciśnienie: <span class="pressure"></span></p>
+            <p>Wilgotność: <span class="humidity"></span></p>
+            <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+            <p>Zachmurzenie: <span class="clouds"></span></p>
+        </section>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <h1>Kim on jest?</h1>
+                    <p>Fenek pustynny, fenek (Vulpes zerda), lis pustynny - gatunek drapieżnego ssaka z rodziny
+                        psowatych
+                        (Canidae).</p>
                 </div>
-                <div class="card">
-                    <img src="fen1.jpg" style="height: 375px; width: 350px;">
-                    <h4>Występowanie</h4>
-                    <p>Występuje na suchych i pustynnych terenach Półwyspu Arabskiego i północnej Afryki. Będąc
-                        najmniejszym przedstawicielem rodziny psowatych, uchodzi za największego ssaka drapieżnego
-                        Sahary.</p>
-                </div>
-                <div class="card">
-                    <img src="fen1.jpg" style="height: 375px; width: 350px;">
-                    <h4>Styl życia</h4>
-                    <p>Fenki są zwierzętami społecznymi. Żyją w grupach do 10 osobników. Zwierzęta te są terytorialne i
-                        pilnują swojego obszaru polowań, znacząc je odchodami.
-                        Prowadzi nocny tryb życia. Śpi za dnia, w piasku Sahary.
-                        Kopie norki, a od nich kilka dróg ewakuacji.
-                        Ściany wzmacnia roślinami, piórami i sierścią. Jedną norkę zamieszkuje kilka osobników
-                    </p>
+                <div class="content">
+                    <div class="card">
+                        <img src="fen1.jpg" style="height: 350px; width: 300px;">
+                        <h4>Wygląd</h4>
+                        <p>Osiąga 30-40 cm długości, samce ważą ok. 1,5 kg, samice ok. 0,8 kg. Ma charakterystyczne,
+                            duże
+                            uszy, dorastające do 15 cm, dzięki którym ma dobry słuch i może efektywnie chłodzić
+                            ciało.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="fen1.jpg" style="height: 350px; width: 300px;">
+                        <h4>Występowanie</h4>
+                        <p>Występuje na suchych i pustynnych terenach Półwyspu Arabskiego i północnej Afryki. Będąc
+                            najmniejszym przedstawicielem rodziny psowatych, uchodzi za największego ssaka
+                            drapieżnego
+                            Sahary.</p>
+                    </div>
+                    <div class="card">
+                        <img src="fen1.jpg" style="height: 350px; width: 300px;">
+                        <h4>Styl życia</h4>
+                        <p>Fenki są zwierzętami społecznymi. Żyją w grupach do 10 osobników. Zwierzęta te są
+                            terytorialne i
+                            pilnują swojego obszaru polowań, znacząc je odchodami.
+                            Prowadzi nocny tryb życia. Śpi za dnia, w piasku Sahary.
+                            Kopie norki, a od nich kilka dróg ewakuacji.
+                            Ściany wzmacnia roślinami, piórami i sierścią. Jedną norkę zamieszkuje kilka osobników
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script> src = "./serviceworker.js"</script>
+    </main>
+
+    <script src="./serviceworker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

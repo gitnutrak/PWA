@@ -46,7 +46,7 @@ body {
 }
 
 .content .card img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -63,6 +63,16 @@ body {
         flex-direction: column;
     }
 }
+
 .profile-body {
     margin: 0;
-   }
+}
+
+.post-body .separator a {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.post-body img {
+    padding: 0;
+}
