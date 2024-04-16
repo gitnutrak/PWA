@@ -41,12 +41,12 @@ body {
     flex: 1;
     margin: auto;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #f8f8f8bd;
 
 }
 
 .content .card img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -63,3 +63,6 @@ body {
         flex-direction: column;
     }
 }
+.profile-body {
+    margin: 0;
+   }
