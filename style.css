@@ -1,15 +1,16 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: gainsboro;
+    overflow-x: hidden; 
 }
 
 .container {
-    width: 80%;
+    width: 100%;
 }
 
 .container .row {
@@ -17,17 +18,24 @@ body {
     margin: auto;
 }
 
-.container .row .header {
-    width: 60%;
-    text-align: center;
-    margin: auto;
+.header {
+    text-align: center; 
+}
+
+.header-img,
+.weather-img,
+.content-img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: auto; 
+    max-height: 350px;
 }
 
 .container .row .header h1 {
     padding-top: 30px;
     font-size: 45px;
     color: #e19c30;
-
 }
 
 .container .row .header p {
@@ -42,7 +50,6 @@ body {
     margin: auto;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     background-color: #f8f8f8bd;
-
 }
 
 .content .card img {
@@ -55,24 +62,10 @@ body {
     color: #6e6e6e;
     line-height: 1.5;
     padding: 10px;
-
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:768px) {
     .content {
         flex-direction: column;
     }
-}
-
-.profile-body {
-    margin: 0;
-}
-
-.post-body .separator a {
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-.post-body img {
-    padding: 0;
 }
