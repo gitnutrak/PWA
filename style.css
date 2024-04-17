@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body {
     background-color: gainsboro;
 }
@@ -13,7 +14,7 @@ body {
 }
 
 .weather-img {
-    width: 150px;
+    width: 150px; 
     height: auto;
 }
 
@@ -88,4 +89,3 @@ body {
 .post-body img {
     padding: 0;
 }
-
