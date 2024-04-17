@@ -8,6 +8,14 @@ body {
     background-color: gainsboro;
 }
 
+.container {
+    width: 100%;
+}
+
+.container .row {
+    width: 80%;
+    margin: auto;
+}
 .header-img {
     width: 375px; 
     height: auto;
@@ -16,20 +24,6 @@ body {
 .weather-img {
     width: 150px; 
     height: auto;
-}
-
-.content-img {
-    width: 300px; 
-    height: 350px; 
-}
-
-.container {
-    width: 100%;
-}
-
-.container .row {
-    width: 80%;
-    margin: auto;
 }
 
 .container .row .header {
@@ -57,10 +51,11 @@ body {
     margin: auto;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     background-color: #f8f8f8bd;
+
 }
 
 .content .card img {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -69,6 +64,7 @@ body {
     color: #6e6e6e;
     line-height: 1.5;
     padding: 10px;
+
 }
 
 @media screen and (max-width:768px) {
